@@ -25,7 +25,9 @@ section:not(#head){
     padding:30px 0;
 }
 
-
+main section:nth-of-type(2n+3){
+    background-color: lightgray;
+}
 
 #jumbodrone{
     width: 100%;
@@ -66,9 +68,68 @@ section:not(#head){
 #jumbodrone .col{
     background-color: pink;
     border: 1px dashed black;
-    height: 300px;
-    width: 80%;
+    height: 250px;
+    width: 70%;
 }
 
 /* END JUMBODRONE SECTION */
 
+/* MAIN COLLUMNS LAYOUT */
+
+main .col_10, .col_20, .col_30, .col_40, .col_50, .col_60, .col_70, .col_80, .col_90, .col_100{
+    height: 300px;
+    border: 1px dashed black;
+}
+
+.col_10{
+    width: 10%;
+    background-color: lightblue;
+}
+
+.col_20{
+    width: 20%;
+    background-color: lightblue;
+}
+
+.col_30{
+    width: 30%;
+    background-color: lightblue;
+}
+
+.col_40{
+    width: 40%;
+    background-color: pink;
+}
+
+.col_50{
+    width: 50%;
+    background-color: lightblue;
+}
+
+.col_60{
+    width: 60%;
+    background-color: rgb(25, 127, 186);
+}
+
+.col_70{
+    width: 70%;
+    background-color: lightblue;
+}
+
+.col_80{
+    width: 80%;
+    background-color: lightblue;
+}
+
+.col_90{
+    width: 90%;
+    background-color: lightblue;
+}
+
+.col_100{
+    width: 100%;
+    background-color: green;
+    height: 450px;
+}
+
+/* END MAIN COLLUMNS LAYOUT */
