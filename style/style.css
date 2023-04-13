@@ -21,6 +21,17 @@ header{
     padding: 10px;
 }
 
+section:not(#head){
+    padding:30px 0;
+}
+
+
+
+#jumbodrone{
+    width: 100%;
+    background-color: blue;
+}
+
 /* HEADER STRUCTURE */ 
 
 .header_col{
@@ -43,11 +54,21 @@ header{
     text-align: right;
 }
 
-a{
+.menu a{
     text-decoration: none;
     color: black;
 }
 
 /* FINE HEADER STRUCTURE */ 
 
+/* JUMBODRONE SECTION */
+
+#jumbodrone .col{
+    background-color: pink;
+    border: 1px dashed black;
+    height: 300px;
+    width: 80%;
+}
+
+/* END JUMBODRONE SECTION */
 
