@@ -3,3 +3,51 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+header{
+    background-color: lightskyblue;
+    padding: 10px;
+}
+
+/* HEADER STRUCTURE */ 
+
+.header_col{
+    padding: 10px;
+    background-color: goldenrod;
+    border: 1px dashed black;
+}
+
+.logo{
+    width: 20%;
+}
+
+.menu{
+    width:60%;
+    text-align: center;
+}
+
+.login{
+    width: 20%;
+    text-align: right;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* FINE HEADER STRUCTURE */ 
+
+
