@@ -16,32 +16,17 @@
     width: 100%;
 }
 
-header{
+/* HEADER STRUCTURE */ 
+#head{
     background-color: lightskyblue;
     padding: 10px;
 }
 
-section:not(#head){
-    padding:30px 0;
-}
-
-main section:nth-of-type(2n+3){
-    background-color: lightgray;
-}
-
-#jumbodrone{
-    width: 100%;
-    background-color: blue;
-}
-
-/* HEADER STRUCTURE */ 
-
-.header_col{
+header .col{
     padding: 5px 10px;
     background-color: goldenrod;
     border: 1px dashed black;
 }
-
 .logo{
     width: 20%;
 }
@@ -51,19 +36,22 @@ main section:nth-of-type(2n+3){
     text-align: center;
 }
 
-.login{
-    width: 20%;
-    text-align: right;
-}
-
 .menu a{
     text-decoration: none;
     color: black;
 }
 
+.login{
+    width: 20%;
+    text-align: right;
+}
 /* FINE HEADER STRUCTURE */ 
 
 /* JUMBODRONE SECTION */
+#jumbodrone{
+    width: 100%;
+    background-color: blue;
+}
 
 #jumbodrone .col{
     background-color: pink;
@@ -71,11 +59,19 @@ main section:nth-of-type(2n+3){
     height: 250px;
     width: 70%;
 }
-
 /* END JUMBODRONE SECTION */
 
-/* MAIN COLLUMNS LAYOUT */
+/* MAIN LAYOUT */
+ /* MAIN SECTIONS */
+main section{
+    padding:30px 0;
+}
 
+main section:nth-of-type(2n+3){
+    background-color: lightgray;
+}
+    /* END MAIN SECTIONS */
+    /* MAIN COLLUMNS LAYOUT */
 main .col_40, .col_60, .col_100{
     height: 300px;
     border: 1px dashed black;
@@ -96,41 +92,48 @@ main .col_40, .col_60, .col_100{
     background-color: green;
     height: 450px;
 }
+    /* END MAIN COLLUMNS LAYOUT */
+/*END MAIN LAUOUT */
+/* FOOTER LAYOUT */
+footer section{
+    background-color: rgb(31, 29, 29);
+}
+    /* SECTION #CONTATTI */
 
-/* END MAIN COLLUMNS LAYOUT */
-
-/* FOOTER OLLUMNS LAYOUT */
-
-footer {
-    background-color: black;
+#contatti{
+    padding:3px 0px 20px 0px;
 }
 
-.col_15{
+#contatti .col_15{
     height: 450px;
     width: calc(70% / 4);
     background-color: cyan;
-    border: 1px dashed black;
+    border: 1px dashed white;
 }
 
-.col_30{
+#contatti .col_30{
     height: 450px;
     width: 30%;
     background-color: pink;
     border: 1px dashed black;
 }
+    /*FINE SECTION CONTATTI */
 
-footer .col_100{
-    height: fit-content;
-    background-color: limegreen;
-}
-
-#end .row{
-    padding: 10px 0;
-    background-color: cyan;
-    justify-content: space-between;
+    /* SECTION #END */
+#end{
+    padding: 15px 0px 0px 0px
 }
 
 #end .col{
+    width: 100%;
+    padding: 10px 0;
+    background-color: cyan;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#end .logo, #end .login{
     width: fit-content;
     height: fit-content;
     padding: 5px;
@@ -142,3 +145,5 @@ footer .col_100{
     background-color: rgba(255, 255, 255, 0);
     border: none;
 }
+    /* FINE SECTION END */
+/* FINE FOOTER */
